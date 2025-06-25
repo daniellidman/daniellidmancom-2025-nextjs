@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import WorkExperience from './components/WorkExperience';
+import HomeVideo from './components/HomeVideo';
 
 export default function Home() {
   return (
-    <div className="w-3/4 m-auto grid grid-cols-2">
+    <div className="h-3/4 my-8 w-3/4 m-auto grid grid-cols-2">
       <div className="flex flex-col">
-        <div className="bg-white m-1 p-2 rounded-xl ">
+        <div className="bg-white m-1 mb-2 p-4 rounded-xl ">
           <Image
             src="/DanielBioBlur.jpg"
             width={100}
@@ -36,7 +37,10 @@ export default function Home() {
           <Project />
         </div>
       </div>
-      <WorkExperience />
+      <div>
+        <HomeVideo />
+        <WorkExperience />
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { headers } from 'next/headers';
+import Image from 'next/image';
 
 function WorkExperience() {
   const experienceArray = [
@@ -45,7 +45,7 @@ function WorkExperience() {
   ];
 
   return (
-    <div className="bg-white rounded-xl m-1 p-2">
+    <div className="bg-white rounded-xl m-1 p-4 ">
       <h1 className="uppercase font-extrabold text-xl mb-4">Experience</h1>
       {experienceArray.map((job, i) => (
         <Job key={i} job={job} />
