@@ -1,22 +1,22 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [showReel, setShowReel] = useState(false);
 
   return (
-    <main className="max-w-3xl mx-auto px-4 pb-10 font-sans">
+    <main className="max-w-3xl mx-auto pb-10 font-sans">
       {/* Intro Section */}
       <section className="mb-12">
         <p className="text-xl">
-          I’m Daniel — a motion designer and frontend developer currently
-          exploring creative code, performance scoring systems, and motion
-          graphics tools like Rive.
+          I’m Daniel — a motion designer and video editor currently exploring
+          interactive motion design, performance rendering, and creative code.
         </p>
 
         <div>
-          <h2 className="text-xl font-semibold  mt-8 mb-2">My Reel</h2>
+          <h2 className="text-2xl font-semibold  mt-8 mb-4">My Reel</h2>
           {showReel ? (
             <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-xl shadow-md">
               <iframe
@@ -54,31 +54,29 @@ export default function Home() {
 
       {/* What I'm Working On Feed */}
       <section>
-        <h2 className="text-2xl font-semibold mb-6">What I’m Working On</h2>
+        <h2 className="text-2xl font-semibold mb-4">What I’m Working On</h2>
         <ul className="space-y-6">
           <li>
-            <div className="text-lg font-medium">
-              🎥 Animating NBA-style lower thirds for a sports network
-            </div>
+            <div className="text-lg font-medium">Concert Visuals</div>
             <p className="text-gray-700">
-              Experimenting with Rive for real-time animation pipelines and
-              client-ready assets.
-            </p>
-          </li>
-          <li>
-            <div className="text-lg font-medium">💻 Daniellidman.com</div>
-            <p className="text-gray-700">
-              This website is built using Nextjs and Reactjs, deployed on
-              Vercel. More updates coming soon!
+              Volunteering with a band to bring their vision to life for a
+              concert.
             </p>
           </li>
           <li>
             <div className="text-lg font-medium">
-              🧪 Testing Spline for 3D portfolio interaction
+              Testing Three.js for 3D portfolio interaction
             </div>
             <p className="text-gray-700">
               Considering ways to embed lightweight 3D elements into a personal
               site without hurting performance.
+            </p>
+          </li>
+          <li>
+            <div className="text-lg font-medium">DanielLidman.com</div>
+            <p className="text-gray-700">
+              This website is built using Next.js and React.js, deployed on
+              Vercel. It's a work in progress, more updates coming soon!
             </p>
           </li>
         </ul>

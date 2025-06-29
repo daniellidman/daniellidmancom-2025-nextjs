@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <header className="mb-10">
             <h1 className="text-3xl font-bold">Daniel Lidman</h1>
             <p className="text-lg text-gray-600">
-              Video Editor · Animator · Web Developer
+              Animator · Video Editor · Web Developer
             </p>
             <nav className="mt-4 space-x-4">
               <Link href="/" className="text-blue-600 hover:underline">
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
 
           {children}
 
-          <footer className="mt-16 border-t pt-6 text-gray-600">
+          <footer className="mt-12 border-t pt-6 text-gray-600">
             <p>
               I’m open to full-time or freelance roles. If you’re hiring or
               collaborating,

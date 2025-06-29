@@ -45,8 +45,8 @@ function WorkExperience() {
   ];
 
   return (
-    <div className="bg-white rounded-xl m-1 p-4 ">
-      <h1 className="uppercase font-extrabold text-xl mb-4">Experience</h1>
+    <div className="mt-6 ">
+      <h1 className="font-extrabold text-xl mb-4">Experience</h1>
       {experienceArray.map((job, i) => (
         <Job key={i} job={job} />
       ))}
@@ -58,7 +58,7 @@ export default WorkExperience;
 
 function Job({ job }) {
   return (
-    <div className=" m-1 pb-4">
+    <div className="pb-4">
       <p className="uppercase inline font-bold text-sm">{job.title} | </p>
       <p className="inline text-xs font-semibold text-blue-900">{job.dates}</p>
       <p className="text-xs italic">{job.company}</p>
