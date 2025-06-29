@@ -5,9 +5,9 @@ export default function AboutPage() {
     <section>
       <h2 className="text-2xl font-semibold mb-4">About Me</h2>
       <p className="text-lg text-gray-700 mb-6">
-        I’m a creative technologist blending animation, editing, and frontend
+        {`I’m a creative technologist blending animation, editing, and frontend
         development. I'm currently employed full time as a video editor,
-        exploring web and creative development on the side.
+        exploring web and creative development on the side.`}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         <WorkExperience />

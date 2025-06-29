@@ -75,8 +75,8 @@ export default function Home() {
           <li>
             <div className="text-lg font-medium">DanielLidman.com</div>
             <p className="text-gray-700">
-              This website is built using Next.js and React.js, deployed on
-              Vercel. It's a work in progress, more updates coming soon!
+              {`This website is built using Next.js and React.js, deployed on
+              Vercel. It's a work in progress, more updates coming soon!`}
             </p>
           </li>
         </ul>
