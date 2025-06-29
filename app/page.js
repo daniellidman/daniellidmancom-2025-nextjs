@@ -33,7 +33,7 @@ export default function Home() {
               onClick={() => setShowReel(true)}
             >
               <img
-                src="/reel-thumbnail.jpg" // Add this to your /public folder
+                src="/reel-thumbnail.jpg"
                 alt="Video reel thumbnail"
                 className="rounded-xl shadow-md transition group-hover:brightness-90"
               />
