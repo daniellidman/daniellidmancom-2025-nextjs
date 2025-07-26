@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const [showReel, setShowReel] = useState(false);
@@ -11,8 +12,9 @@ export default function Home() {
       {/* Intro Section */}
       <section className="mb-12">
         <p className="text-xl">
-          I’m Daniel — a motion designer and video editor currently exploring
-          interactive motion design, performance rendering, and creative code.
+          I’m Daniel — a video editor and motion designer currently exploring
+          interactive motion design, performance video iteration, and creative
+          code.
         </p>
 
         <div>
@@ -65,11 +67,11 @@ export default function Home() {
           </li>
           <li>
             <div className="text-lg font-medium">
-              Testing Three.js for 3D portfolio interaction
+              DL Video Inspiration Board
             </div>
             <p className="text-gray-700">
-              Considering ways to embed lightweight 3D elements into a personal
-              site without hurting performance.
+              Building an application to collect and organize video resources
+              and references for video ideation.
             </p>
           </li>
           <li>
@@ -77,6 +79,15 @@ export default function Home() {
             <p className="text-gray-700">
               {`This website is built using Next.js and React.js, deployed on
               Vercel. It's a work in progress, more updates coming soon!`}
+            </p>
+          </li>
+          <li>
+            <div className="text-lg font-medium">
+              <Link href="">Crossfit Leaderboard Application</Link>
+            </div>
+            <p className="text-gray-700">
+              Mimicking the games.crossfit.com open leaderboard, but for anyone
+              to create and display their competition leaderboards.
             </p>
           </li>
         </ul>

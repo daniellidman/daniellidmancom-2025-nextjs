@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <header className="mb-10">
             <h1 className="text-3xl font-bold">Daniel Lidman</h1>
             <p className="text-lg text-gray-600">
-              Animator · Video Editor · Web Developer
+              Video Editor · Animator · Web Developer
             </p>
             <nav className="mt-4 space-x-4">
               <Link href="/" className="text-blue-600 hover:underline">

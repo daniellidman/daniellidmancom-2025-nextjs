@@ -36,12 +36,12 @@ function WorkExperience() {
       headline:
         'Along with my full-time position I’ve also taken on freelance video editing work. I have had the great opportunity to work with amazing brands and grow my skills alongside great creative minds.',
     },
-    {
-      company: 'Ferris State University',
-      title: 'Bachelor of Science',
-      dates: 'December 2015',
-      headline: 'Television & Digital Media Production',
-    },
+    // {
+    //   company: 'Ferris State University',
+    //   title: 'Bachelor of Science',
+    //   dates: 'December 2015',
+    //   headline: 'Television & Digital Media Production',
+    // },
   ];
 
   return (
