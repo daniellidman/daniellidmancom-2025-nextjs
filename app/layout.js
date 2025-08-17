@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="bg-white text-gray-900 font-sans">
+      <body className="bg-white text-gray-900 font-inter">
         <div className="font-inter">
           <header className="mb-10 bg-white p-8 py-20 ">
             <HoverAvatar />
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
               }
             </p>
           </header>
-          <div className="p-8">{children}</div>
+          <div className="p-8 font-inter">{children}</div>
           <div className="p-8 bg-white">
             <footer className="py-6 font-[300] text-black max-w-3xl mx-auto text-right flex justify-between">
               <p className="text-sm text-gray-500">Daniel Lidman 2025</p>
