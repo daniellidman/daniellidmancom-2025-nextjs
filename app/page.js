@@ -69,7 +69,7 @@ export default function Home() {
             <h3 className="text-xl my-4 font-bold">Portfolio Website</h3>
             <p className="text-sm my-4">
               This website is built using Next.js and React.js, deployed on
-              Vercel. It's a work in progress, more updates coming soon!
+              Vercel. It&apos;s a work in progress, more updates coming soon!
             </p>
           </div>
         </div>
