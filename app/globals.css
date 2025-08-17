@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
 @import 'tailwindcss';
 
 :root {
-  --background: #ececec;
+  --background: #f5f5f5;
   --foreground: #171717;
 }
 
@@ -10,6 +11,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-custom-primary: #d98470;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +24,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }

@@ -1,9 +1,11 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
+import HoverAvatar from './components/HoverAvatar';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const inter = Inter({
-  variable: '--font-inter',
+  // variable: '--font-inter',
   subsets: ['latin'],
 });
 
@@ -14,51 +16,50 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body className="bg-white text-gray-900 font-sans">
-        <div className="max-w-3xl mx-auto px-4 py-8">
-          <header className="mb-10">
-            <h1 className="text-3xl font-bold">Daniel Lidman</h1>
-            <p className="text-lg text-gray-600">
-              Video Editor · Animator · Web Developer
+        <div className="font-inter">
+          <header className="mb-10 bg-white p-8 py-20 ">
+            <HoverAvatar />
+            <h2 className="text-2xl font-[600] text-center my-4">
+              Hi, I'm Daniel Lidman
+            </h2>
+            <h1 className="text-6xl  font-black text-center my-6">
+              Web Developer
+            </h1>
+            <p className="max-w-3xl m-auto text-lg font-[300]">
+              I build web applications that are as functional as they are
+              engaging, combining reliable code with the creativity I bring from
+              my background in{' '}
+              {
+                <Link href="http://www.daniel-lidman.com" target="blank">
+                  video and motion design.
+                </Link>
+              }
             </p>
-            <nav className="mt-4 space-x-4">
-              <Link href="/" className="text-blue-600 hover:underline">
-                Home
-              </Link>
-              <Link href="/about" className="text-blue-600 hover:underline">
-                About
-              </Link>
-              <Link href="/projects" className="text-blue-600 hover:underline">
-                Projects
-              </Link>
-              <Link href="/contact" className="text-blue-600 hover:underline">
-                Contact
-              </Link>
-            </nav>
           </header>
-
-          {children}
-
-          <footer className="mt-12 border-t pt-6 text-gray-600">
-            <p>
-              I’m open to full-time or freelance roles. If you’re hiring or
-              collaborating,
-              <Link href="/contact" className="text-blue-600 hover:underline">
-                {' '}
-                let’s talk
-              </Link>
-              .
-            </p>
-          </footer>
+          <div className="p-8">{children}</div>
+          <div className="p-8 bg-white">
+            <footer className="py-6 font-[300] text-black max-w-3xl mx-auto text-right flex justify-between">
+              <p className="text-sm text-gray-500">Daniel Lidman 2025</p>
+              <div>
+                <Link href="http://www.github.com/daniellidman" target="blank">
+                  <FaGithub className="inline ml-4 hover:text-custom-primary" />
+                </Link>
+                <Link
+                  href="http://www.linkedin.com/in/daniellidman"
+                  target="blank"
+                >
+                  <FaLinkedin className="inline ml-4 hover:text-custom-primary" />
+                </Link>
+                <Link href="mailto:daniel@daniellidman.com" target="blank">
+                  <FaEnvelope className="inline ml-4 hover:text-custom-primary" />
+                </Link>
+              </div>
+            </footer>
+          </div>
         </div>
       </body>
     </html>
   );
 }
-
-// <html lang="en">
-//   <body className={`${inter.variable} bg-white text-gray-900`}>
-//     {children}
-//   </body>
-// </html>
