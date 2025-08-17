@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           <header className="mb-10 bg-white p-8 py-20 ">
             <HoverAvatar />
             <h2 className="text-2xl font-[600] text-center my-4">
-              Hi, I'm Daniel Lidman
+              Hi, I&apos;m Daniel Lidman
             </h2>
             <h1 className="text-6xl  font-black text-center my-6">
               Web Developer

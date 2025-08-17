@@ -57,7 +57,7 @@ function Job({ job }) {
       <p className="inline text-xs font-semibold text-blue-900">{job.dates}</p>
       <p className="text-xs italic">{job.company}</p>
       {/* <ul className='list-disc text-xs ml-3'>
-        {job.bulletPoints.map((bullet)=> (<li>{bullet}</li>))}
+        {job.bulletPoints.map((bullet, i)=> (<li key={i}>{bullet}</li>))}
       </ul> */}
     </div>
   );
