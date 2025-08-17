@@ -7,41 +7,32 @@ function WorkExperience() {
       title: 'Senior Video Editor',
       dates: 'Oct 2023 - Present',
       headline:
-        'Create engaging and innovative video content to educate and empower audiences on personal finance while driving company objectives.',
-      bulletPoints:
-        'Collaborated with producers to deliver high-quality videos aligned with strategic goals. \nIncorporated feedback from stakeholders and clients to refine and enhance projects. \nProduced diverse content, including advertisements, curriculum materials, live event videos, trailers for YouTube shows, and product launch videos.',
+        '',
+      bulletPoints: ['Produced 50+ high-quality videos annually for a YouTube audience of 5M+, strengthening engagement and brand growth.', 'Collaborated with cross-functional teams to translate business goals into digital experiences.', 'Streamlined editing workflows while maintaining quality, demonstrating optimization and problem-solving skills.'],
     },
     {
       company: 'Love Has No Limits',
-      title: 'Senior Video Editor',
-      dates: 'Jul 2019 - Oct 2023',
-      headline:
-        'In 2019 Missions.Me rebranded as a domestic humanitarian non-profit Love Has No Limits with a mission to unite to tackle deeply entrenched challenges in our cities.',
-      bulletPoints:
-        'Worked directly with executive leadership to craft messaging and video content \nProduced screen content for conferences and stadium events, including The Freedom Experience with performances by Justin Bieber and Chance the Rapper. \nContinued to lead all video editing and motion graphic animation for the organization.',
-    },
-    {
-      company: 'Missions.Me',
       title: 'Video Editor',
-      dates: 'Jan 2016 - Jul 2019',
+      dates: 'Jan 2016 - Oct 2023',
       headline:
-        'Through humanitarian aid, large-scale international outreaches, sustainable poverty solutions, and leadership training, Missions.Me empowers people to change the world.',
-      bulletPoints:
-        '- Led all video editing and motion graphic animation for the organization, including promo videos, documentary and recap content, social media, and training materials. \n- Demonstrated technical expertise while maintaining video archives for 10+ international campaigns. \n- Directed video department, including leading and managing interns, junior editors, and contractors in addition to overseeing $50,000 custom studio build out.',
+        '',
+      bulletPoints: [
+        'Directed the video department, overseeing 5+ interns and contractors, and led a $50,000 custom studio build-out,—demonstrating technical leadership and project ownership.',
+        'Produced 400+ videos for 9 international and domestic humanitarian campaigns, reaching stadium audiences of 60,000+ and millions online.',
+        'Delivered high-profile content for The Freedom Experience featuring Justin Bieber & Chance the Rapper, managing high-pressure deadlines and complex production pipelines.',
+        'Partnered with executive leadership to shape messaging and digital storytelling.'
+      ],
     },
     {
       company: '',
       title: 'Freelance Video Editor',
-      dates: '2018 - 2024',
+      dates: '2018 - 2025',
       headline:
         'Along with my full-time position I’ve also taken on freelance video editing work. I have had the great opportunity to work with amazing brands and grow my skills alongside great creative minds.',
+        bulletPoints: ['Delivered video content for diverse brands and agencies, managing projects from requirements to final delivery.', 
+        'Adapted to new workflows and tools, reinforcing a fast learning curve now applied to JavaScript and web.'
+]
     },
-    // {
-    //   company: 'Ferris State University',
-    //   title: 'Bachelor of Science',
-    //   dates: 'December 2015',
-    //   headline: 'Television & Digital Media Production',
-    // },
   ];
 
   return (
@@ -57,12 +48,15 @@ function WorkExperience() {
 export default WorkExperience;
 
 function Job({ job }) {
+
   return (
     <div className="pb-4">
       <p className="uppercase inline font-bold text-sm">{job.title} | </p>
       <p className="inline text-xs font-semibold text-blue-900">{job.dates}</p>
       <p className="text-xs italic">{job.company}</p>
-      <p className="text-xs">{job.headline}</p>
+      <ul className='list-disc text-xs ml-3'>
+        {job.bulletPoints.map((bullet)=> (<li>{bullet}</li>))}
+      </ul>
     </div>
   );
 }

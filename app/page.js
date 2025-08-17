@@ -12,7 +12,7 @@ export default function Home() {
       {/* Intro Section */}
       <section className="mb-12">
         <p className="text-xl">
-          I’m Daniel — a video editor and motion designer currently exploring
+          I’m Daniel — a web developer currently exploring
           interactive motion design, performance video iteration, and creative
           code.
         </p>
