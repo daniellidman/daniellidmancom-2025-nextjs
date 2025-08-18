@@ -21,13 +21,13 @@ export default function RootLayout({ children }) {
         <div className="font-inter">
           <header className="mb-10 bg-white p-8 py-20 ">
             <HoverAvatar />
-            <h2 className="text-2xl font-[600] text-center my-4">
+            <h2 className="text-2xl font-[600] text-center my-4 text-gray-900">
               Hi, I&apos;m Daniel Lidman
             </h2>
-            <h1 className="text-6xl  font-black text-center my-6">
+            <h1 className="text-6xl text-gray-900  font-black text-center my-6">
               Web Developer
             </h1>
-            <p className="max-w-3xl m-auto text-lg font-[300]">
+            <p className="max-w-3xl m-auto text-lg font-[300] text-gray-900">
               I build web applications that are as functional as they are
               engaging, combining reliable code with the creativity I bring from
               my background in{' '}
